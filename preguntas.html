@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preguntas</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>Preguntas</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="calculadora.html">Calculadora</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2>Buscar preguntas</h2>
+
+        <input
+            id="search"
+            class="search"
+            type="search"
+            placeholder="Buscar por ID, título, contenido o área..."
+            autocomplete="off"
+        >
+
+        <div id="filters" class="filters"></div>
+    </section>
+
+    <section>
+        <div id="results"></div>
+    </section>
+</main>
+
+<script src="js/preguntas.js"></script>
+</body>
+</html>

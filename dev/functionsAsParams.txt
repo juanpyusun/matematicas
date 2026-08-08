@@ -1,7 +1,0 @@
-const operacion = (a,b,op) => { 
-    return op(a, b);
-}
-console.log(operacion(1, 3, suma)); // Output: 4
-const suma = (a, b) => {
-    return a + b;
-}

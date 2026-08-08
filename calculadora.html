@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>Calculadora</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="calculadora.html">Calculadora</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container calculator">
+    <h2>Calculadora matemática</h2>
+
+    <textarea id="expression" rows="7"
+        placeholder="Introduce una expresión matemática..."></textarea>
+
+    <div class="symbol-bar" aria-label="Símbolos">
+        <button type="button" data-symbol="x^2">x²</button>
+        <button type="button" data-symbol="^">xⁿ</button>
+        <button type="button" data-symbol="sqrt()">√</button>
+        <button type="button" data-symbol="pi">π</button>
+        <button type="button" data-symbol="sum()">∑</button>
+        <button type="button" data-symbol="int()">∫</button>
+        <button type="button" data-symbol="sin()">sin</button>
+        <button type="button" data-symbol="cos()">cos</button>
+    </div>
+
+    <button id="execute" type="button">Ejecutar</button>
+
+    <section class="result-section">
+        <h2>Resultado</h2>
+        <div id="result" class="result-box">
+            <p>El motor matemático todavía no está implementado.</p>
+        </div>
+    </section>
+</main>
+
+<script src="js/calculadora.js"></script>
+</body>
+</html>
